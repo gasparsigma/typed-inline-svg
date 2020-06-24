@@ -1,0 +1,60 @@
+{
+  "name": "typed-inline-svg",
+  "version": "1.0.0",
+  "description": "Create .d.ts files for your .svg files",
+  "bin": {
+    "typed-inline-svg": "lib/cli.js"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gasparsigma/typed-inline-svg.git"
+  },
+  "keywords": [
+    "typescript",
+    "typed",
+    "svg"
+  ],
+  "author": "Thiago Camargo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gasparsigma/typed-inline-svg/issues"
+  },
+  "homepage": "https://github.com/gasparsigma/typed-inline-svg#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "glob": "^7.1.6",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.2",
+    "@types/jest": "^26.0.2",
+    "@types/rimraf": "^3.0.0",
+    "jest": "^26.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.5"
+  },
+  "jest": {
+    "verbose": false,
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "(test/.*|(src/.*\\.test))\\.ts$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "\\.d\\.ts$",
+      "lib/",
+      "example/",
+      "coverage/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ]
+  }
+}
