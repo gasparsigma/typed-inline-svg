@@ -20,12 +20,11 @@ const yarg = yargs
 
 async function main(): Promise<void> {
   const argv = yarg.argv;
-  const command = (yarg as any)["$0"];
 
   let silent = argv.s;
 
   const consoleLog = (...args: any[]) => {
-    console.log(command, ...args);
+    console.log("typed-inline-svg", ...args);
   };
 
   let searchDir: string;

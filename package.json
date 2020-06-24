@@ -6,6 +6,7 @@
     "typed-inline-svg": "lib/cli.js"
   },
   "scripts": {
+    "prepublishOnly": "npm run clean && npm run build",
     "clean": "rimraf lib",
     "build": "tsc",
     "test": "jest"
