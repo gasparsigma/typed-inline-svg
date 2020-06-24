@@ -1,6 +1,6 @@
 {
   "name": "typed-inline-svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create .d.ts files for your .svg files",
   "bin": {
     "typed-inline-svg": "lib/cli.js"
